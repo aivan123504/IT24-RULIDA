@@ -30,3 +30,11 @@ class LeafletMap {
             this.markerCounts[message]++;
             this.updateMarkerPopup(marker, message);
         });
+
+        this.markers.push(marker);
+    }
+
+    updateMarkerPopup(marker, message) {
+        const count = this.markerCounts[message];
+        marker.bindPopup(`${message}<br>Attendance logs: ${count}`).openPopup();
+    }
