@@ -32,3 +32,5 @@ class DataLogger{
                     <p class="card-text">${data}</p>
                 </div>
             `;
+            this.idContainer.appendChild(card);
+        });
