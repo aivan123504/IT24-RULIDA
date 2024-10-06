@@ -14,3 +14,10 @@ class LeafletMap {
         this.btn2.addEventListener('click', () => this.dataBa());
         this.btnclear.addEventListener('click', () => this.clearLogs());
     }
+
+    initTileLayer() {
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Sample for new corales BSIT student'
+        }).addTo(this.map);
+    }
