@@ -38,3 +38,12 @@ class LeafletMap {
         const count = this.markerCounts[message];
         marker.bindPopup(`${message}<br>Attendance logs: ${count}`).openPopup();
     }
+
+    loadMarkersFromJson(url) {
+        fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(marker => {
+                this.addMarker(marker.latitude, marker.longitude, marker.message);
+            });
+        })
