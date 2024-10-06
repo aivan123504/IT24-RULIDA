@@ -20,3 +20,5 @@ class DataLogger{
         this.loggedData = []; 
         this.updateCardContainer();
     }
+    updateCardContainer(){
+        this.idContainer.innerHTML = '';
