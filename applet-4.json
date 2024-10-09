@@ -1,0 +1,19 @@
+[
+    {
+        "student_id": 1,
+        "student_name": "Aivan Dave Rulida",
+        "student_program": "BS-Information Technology"
+    },
+
+    {
+        "student_id": 2,
+        "student_name": "ronna mencede",
+        "student_program": "BS-Financial Management"
+    },
+
+    {
+        "student_id": 3,
+        "student_name": "rebemae pagas",
+        "student_program": "BS-english education"
+    }
+]
