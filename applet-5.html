@@ -68,6 +68,26 @@
       </nav>
   </nav>
 <body>
+    <div class="contain">
+        <h3>API key </h3>
+        <input type="text" id="apiInput" placeholder="Enter API key" />
+      </div>
+        <div class="container">
+            <h2>Weather</h2>
+    
+            <input type="text" id="cityInput" placeholder="Enter city name" />
+            <button id="getWeatherBtn" class="btn btn-primary" style="margin-top: -0.35rem;">Get Weather</button>
+            <button id="getLocationBtn" class="btn btn-secondary"style="margin-top: -0.35rem;">Use My Location</button>
+    
+            <div id="weatherCard" class="weather-card" style="display: none;">
+                <br>
+                <h2 id="cityName"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="windSpeed"></p>
+            </div>
+        </div>
     
 </body>
 </html>
